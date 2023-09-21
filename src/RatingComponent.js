@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./RatingComponent.css";
 
 export default function RatingComponent() {
   const [rating, setRating] = useState(0);
@@ -8,7 +9,7 @@ export default function RatingComponent() {
     <div class="component">
       {msgToggle ? (
         <div class="rating">
-          <img src="../images/icon-star.svg" alt="star" />
+          <div class="rating__star"></div>
           <p>How did we do?</p>
           <p>
             Please let us know how we did with your support request. All
