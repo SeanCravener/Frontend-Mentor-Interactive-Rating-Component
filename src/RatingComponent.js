@@ -10,8 +10,8 @@ export default function RatingComponent() {
       {msgToggle ? (
         <div class="rating">
           <div class="rating__star"></div>
-          <p>How did we do?</p>
-          <p>
+          <p class="rating__title">How did we do?</p>
+          <p class="rating__text">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
@@ -37,12 +37,17 @@ export default function RatingComponent() {
           </button>
         </div>
       ) : (
-        <div class="thank-you">
-          <img src="./images/illustration-thank-you.svg" alt="thank you" />"
-          <p>You selected {rating} out of 5</p>
-          <p>
-            Thank you! We appreciate you taking the time to give a rating. If
-            you ever need more support, don’t hesitate to get in touch!
+        <div class="rating__submitted">
+          <img
+            class="rating__image"
+            src="./images/illustration-thank-you.svg"
+            alt="thank you"
+          />
+          <p class="rating__selected">You selected {rating} out of 5</p>
+          <p class="rating__title">Thank you!</p>
+          <p class="rating__text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
           </p>
         </div>
       )}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
 /* Global Styles */
 :root {
   /* Primary Colors */
@@ -36,7 +38,6 @@
 
 /* Body Default */
 body {
-  color: var(--light-gray);
   height: 100vh;
 }
 
@@ -47,6 +48,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--light-gray);
 }
 
 /* Component Container */
@@ -57,81 +59,119 @@ body {
   padding: 30px;
 }
 
-/* Rating Form */
+/* Container for rating form */
 .rating {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+/* Container for thank you message */
+.rating__submitted {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  text-align: center;
+}
 
-  & .rating__star {
-    background-color: var(--medium-gray);
-    background-image: url(/public/images/icon-star.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    padding: 25px;
-    align-self: flex-start;
-  }
+/* Rating Title */
+.rating__title {
+  color: var(--white);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-title);
+}
 
-  & p:nth-of-type(1) {
-    color: var(--white);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-title);
-  }
+/* Rating Description */
+.rating__text {
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-p);
+  margin-bottom: 20px;
+  line-height: 1.75;
+}
 
-  & p:nth-of-type(2) {
-    font-weight: var(--font-weight-regular);
-    font-size: var(--font-size-p);
-  }
+/* Star image on Rating form */
+.rating__star {
+  background-color: var(--medium-gray);
+  background-image: url(/public/images/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  padding: 25px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
 
-  & .rating__buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
+/* Image on Thank you message */
+.rating__image {
+  align-self: center;
+  width: 200px;
+  margin-top: 15px;
+}
 
-    /* Rating Buttons */
-    & .rating__button {
-      border-radius: 50%;
-      border: none;
-      background-color: var(--medium-gray);
-      padding: 10px;
-      text-align: center;
-      color: var(--light-gray);
-      font-weight: var(--font-weight-bold);
-      width: 50px;
-      height: 50px;
+/* Rating Buttons Container */
+.rating__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 20px;
+}
 
-      &:hover {
-        cursor: pointer;
-        background-color: var(--orange);
-        color: var(--white);
-      }
+/* Rating Button */
+.rating__button {
+  border-radius: 50%;
+  border: none;
+  background-color: var(--medium-gray);
+  padding: 10px;
+  text-align: center;
+  color: var(--light-gray);
+  font-weight: var(--font-weight-bold);
+  width: 50px;
+  height: 50px;
 
-      &:focus {
-        background-color: var(--light-gray);
-        color: var(--white);
-      }
-    }
-  }
-
-  & .rating__submit {
+  &:hover {
+    cursor: pointer;
     background-color: var(--orange);
     color: var(--white);
-    border: none;
-    border-radius: 30px;
-    padding: 10px;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-p);
-
-    &:hover {
-      cursor: pointer;
-      background-color: var(--white);
-      color: var(--orange);
-    }
-
-    &:focus {
-      background-color: var(--white);
-      color: var(--orange);
-    }
   }
+
+  &:focus {
+    background-color: var(--light-gray);
+    color: var(--white);
+  }
+}
+
+/* Rating submit button */
+.rating__submit {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-p);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
+  }
+
+  &:focus {
+    background-color: var(--white);
+    color: var(--orange);
+  }
+}
+
+/* Selected rating message */
+.rating__selected {
+  color: var(--orange);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-p);
+  border-radius: 25px;
+  background-color: var(--medium-gray);
+  padding: 7px 20px;
+  margin: 15px auto;
+  letter-spacing: 0.5px;
 }
