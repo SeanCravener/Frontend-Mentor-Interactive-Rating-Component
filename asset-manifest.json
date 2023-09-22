@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Frontend-Mentor-Interactive-Rating-Component/static/css/main.e5379d16.css",
+    "main.js": "/Frontend-Mentor-Interactive-Rating-Component/static/js/main.d23bc38a.js",
+    "index.html": "/Frontend-Mentor-Interactive-Rating-Component/index.html",
+    "static/media/icon-star.svg": "/Frontend-Mentor-Interactive-Rating-Component/static/media/icon-star.12766a8d207af861a70f.svg",
+    "main.e5379d16.css.map": "/Frontend-Mentor-Interactive-Rating-Component/static/css/main.e5379d16.css.map",
+    "main.d23bc38a.js.map": "/Frontend-Mentor-Interactive-Rating-Component/static/js/main.d23bc38a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5379d16.css",
+    "static/js/main.d23bc38a.js"
+  ]
+}
